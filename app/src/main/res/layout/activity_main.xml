@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.charlie.tennis.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <Button
+                android:id="@+id/Punto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#EBE8E4"
+                android:text="Federer"
+                android:onClick="player1Score"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/PuntoPlayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/tiebreak"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="-"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <Button
+                android:id="@+id/Punto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#EBE8E4"
+                android:onClick="player2Score"
+                android:text="Nadal"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/PuntoPlayer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="50sp"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player1Set1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/player1TBSet1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Set 1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player2Set1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/player2TBSet1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player1Set2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/player1TBSet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Set 2"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player2Set2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/player2TBSet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player1Set3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/player1TBSet3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Set 3"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+
+            <TextView
+                android:id="@+id/player2Set3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/player2TBSet3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:background="#EBE8E4"
+            android:text="RESET"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
